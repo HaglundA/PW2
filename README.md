@@ -1,4 +1,1 @@
-# PW2
-hello
-hi
-hej
+# Welcome to my personal website! :)
