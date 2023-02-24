@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title>Alexander Haglund</title>
   <style>
     /* CSS styles go here */
     body {
@@ -37,14 +37,18 @@
       background-color: #333;
       color: #fff;
     }
-    main {
-      padding: 20px;
+    /* Styles for the drop-down menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
     }
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
   </style>
 </head>
@@ -55,13 +59,21 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Tutorials</a>
+        <ul class="dropdown-content">
+          <li><a href="tutorials/tutorial1.html">Tutorial 1</a></li>
+          <li><a href="tutorials/tutorial2.html">Tutorial 2</a></li>
+          <li><a href="tutorials/tutorial3.html">Tutorial 3</a></li>
+        </ul>
+      </li>
       <li><a href="page2.html">Page 2</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
   <main>
     <h2>About Me</h2>
-    <p>I am a PhD student at Imperial College London with an interest in computational biology. </p>
+    <p>I am a PhD student at Imperial College London with an interest in computational biology.</p>
   </main>
   <footer>
     <p>&copy; 2023 My Website</p>
