@@ -1,14 +1,14 @@
-let toggleTutorialsButton = document.getElementById("toggle-tutorials-button");
-let tutorialList = document.getElementById("tutorial-list");
+const tutorialsButton = document.getElementById("tutorials-button");
+const tutorialList = document.getElementById("tutorial-list");
 
-function toggleTutorials() {
+function toggle() {
   if (tutorialList.style.display === "none") {
     tutorialList.style.display = "block";
-    document.body.style.paddingTop = tutorialList.offsetHeight + "px";
+    document.body.style.marginTop = tutorialList.offsetHeight + "px";
   } else {
     tutorialList.style.display = "none";
-    document.body.style.paddingTop = 0;
+    document.body.style.marginTop = "0";
   }
 }
 
-toggleTutorialsButton.addEventListener("click", toggleTutorials);
+tutorialsButton.addEventListener("click", toggle);
