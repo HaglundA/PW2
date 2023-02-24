@@ -37,26 +37,18 @@
       background-color: #333;
       color: #fff;
     }
-    /* Styles for the list */
-    .list {
-      list-style: none;
-      margin: 0;
+    /* Styles for the tutorial list */
+    #tutorial-list {
+      display: none;
+      margin-top: 10px;
       padding: 0;
+      list-style: none;
     }
-    .list li {
-      margin-bottom: 10px;
-    }
-    .list li a {
-      display: block;
-      padding: 5px;
-      background-color: #eee;
-      color: #333;
-    }
-    .list li a:hover {
-      background-color: #333;
-      color: #fff;
+    #tutorial-list li {
+      margin-bottom: 5px;
     }
   </style>
+<script src="JS_repo/myscript.js"></script>
 </head>
 <body>
   <header>
@@ -65,22 +57,20 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="#">Tutorials</a>
-        <ul class="list">
-          <li><a href="tutorials/tutorial1.html">Tutorial 1</a></li>
-          <li><a href="tutorials/tutorial2.html">Tutorial 2</a></li>
-          <li><a href="tutorials/tutorial3.html">Tutorial 3</a></li>
-        </ul>
-      </li>
+      <li><button id="tutorials-button">Tutorials</button></li>
       <li><a href="page2.html">Page 2</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main style="margin-top: 50px;">
+  <main>
     <h2>About Me</h2>
     <p>I am a PhD student at Imperial College London with an interest in computational biology.</p>
   </main>
+  <ul id="tutorial-list">
+    <li><a href="tutorials/tutorial1.html">Tutorial 1</a></li>
+    <li><a href="tutorials/tutorial2.html">Tutorial 2</a></li>
+    <li><a href="tutorials/tutorial3.html">Tutorial 3</a></li>
+  </ul>
   <footer>
     <p>&copy; 2023 My Website</p>
   </footer>
