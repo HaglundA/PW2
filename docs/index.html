@@ -48,7 +48,22 @@
       margin-bottom: 5px;
     }
   </style>
-  <script src="JS_repo/myscript.js"></script>
+  <script>
+    // Javascript code
+    var tutorialsButton = document.getElementById('tutorials-button');
+    var tutorialList = document.getElementById('tutorial-list');
+    var mainContent = document.getElementsByTagName('main')[0];
+
+    tutorialsButton.addEventListener('click', function() {
+      if (tutorialList.style.display === 'none') {
+        tutorialList.style.display = 'block';
+        mainContent.style.marginTop = '150px';
+      } else {
+        tutorialList.style.display = 'none';
+        mainContent.style.marginTop = '10px';
+      }
+    });
+  </script>
 </head>
 <body>
   <header>
