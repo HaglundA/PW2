@@ -1,10 +1,14 @@
 // myscript.js
 
-// Get a reference to the "About Me" heading
-var aboutMeHeading = document.querySelector('h2');
+const tutorialsButton = document.getElementById("tutorials-button");
+const tutorialList = document.getElementById("tutorial-list");
 
-// Add a click event listener to the "About Me" heading
-aboutMeHeading.addEventListener('click', function() {
-  // Display an alert message when the heading is clicked
-  alert('You clicked on the "About Me" heading!');
+tutorialsButton.addEventListener("click", function() {
+  if (tutorialList.style.display === "none") {
+    tutorialList.style.display = "block";
+    document.body.style.marginTop = tutorialList.offsetHeight + "px";
+  } else {
+    tutorialList.style.display = "none";
+    document.body.style.marginTop = "0px";
+  }
 });
